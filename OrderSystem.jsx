@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Trash2Icon } from 'lucide-react';
+import { X } from 'lucide-react';
 
 export default function OrderSystem() {
   const [orderNumber, setOrderNumber] = useState('');
@@ -42,7 +42,7 @@ export default function OrderSystem() {
                     onClick={() => removeFromServing(order)}
                     className="mr-2"
                   >
-                    <Trash2Icon className="h-6 w-5" />
+                    <X className="h-6 w-5" />
                   </button>
                   {index === 0 && <span className="text-red-500 text-xl font-bold">3</span>}
                 </div>
